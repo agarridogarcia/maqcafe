@@ -2,23 +2,46 @@
 package maquinacafe;
 
 import javax.swing.JOptionPane;
-
+/**
+ * Contiene una máquina de cafe
+ * @author agarridogarcia
+ * @version 10/03/2017
+ */
 
 public class MaquinaCafe {
-
+    /**
+     * @param Monedero es static
+     * @param Display es static
+     * 
+     */
     static Monedero monedero1;
     static Display display1;
+    /**
+     * 
+     * @param args clase principal, se ejecutan todos los métodos
+     */
     public static void main(String[] args) {
+    /**
+     * @param opinion tipo int iniciado a 0
+     * @param cafe tipo String
+     * @param te tipo String
+     * @param chocolate tipo String
+     */
     int opcion = 0;
     String cafe;
     String te;
     String chocolate;
     
-    
+    /**
+     * @param monedero1 objeto de clase Monedero
+     * @param display1 objeto de clase Display
+     */
     monedero1=new Monedero();
     display1=new Display();
    
-  
+    /** Se llaman a todos los metodos a traves de un swich
+     * @exception ex envia un mensaje si ocurre excepcion
+     */
          
          do{
              try{
@@ -49,21 +72,8 @@ public class MaquinaCafe {
 }while(opcion<7);
     }
 
-    public static void introducirDinero(){
-        
-    monedero1.guardarDinero(0.50f);
-    }
     
-//    public  void elaborarProducto(float dinero){
-//        //float dinero=Float.parseFloat(JOptionPane.showInputDialog("introduce dinero: "));
-//       if (dinero>=0.50f){
-//           System.out.println("Elaborando producto... ");
-//           
-//        }
-//        else
-//            System.out.println("Dinero insuficiente.");
-//    }
-//    
     
+ 
     
 }
